@@ -325,8 +325,8 @@ jQuery.fn.daterangepicker = function(settings){
 
 	//add arrows (only available on one input)
 	if(options.arrows && rangeInput.size()==1){
-		var prevLink = jQuery('<a href="#" class="ui-daterangepicker-prev ui-corner-all" title="'+ options.prevLinkText +'"><span class="ui-icon ui-icon-circle-triangle-w">'+ options.prevLinkText +'</span></a>');
-		var nextLink = jQuery('<a href="#" class="ui-daterangepicker-next ui-corner-all" title="'+ options.nextLinkText +'"><span class="ui-icon ui-icon-circle-triangle-e">'+ options.nextLinkText +'</span></a>');
+		var prevLink = jQuery('<a href="#" class="ui-daterangepicker-prev ui-corner-all" title="'+ options.prevLinkText +'"><span class="ui-icon ui-icon-triangle-1-a">'+ options.prevLinkText +'</span></a>');
+		var nextLink = jQuery('<a href="#" class="ui-daterangepicker-next ui-corner-all" title="'+ options.nextLinkText +'"><span class="ui-icon ui-icon-triangle-1-e">'+ options.nextLinkText +'</span></a>');
 	
 		jQuery(this)
 		.addClass('ui-rangepicker-input ui-widget-content')

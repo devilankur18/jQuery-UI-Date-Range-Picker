@@ -26,6 +26,12 @@
 .ui-daterangepicker .range-start, .ui-daterangepicker .range-end {
 	margin-left: 5px;
 }
+
+.ui-daterangepicker button:hover{
+    background-position: 0 -15px;
+  color: #333;
+  text-decoration: none;
+}
 .ui-daterangepicker button.btnDone {
 	margin: 0 5px 5px 0;
 	position: absolute;
@@ -34,6 +40,58 @@
 	clear: both;
 	cursor: pointer;
 	font-size: 1.1em;
+
+  padding: 7px 9px 7px;
+  font-size: 11px;
+
+    cursor: pointer;
+  display: inline-block;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  padding: 5px 14px 6px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  color: #333;
+  font-size: 13px;
+  line-height: normal;
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  -ms-transition: 0.1s linear all;
+  -o-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+
+
+  color: #ffffff;
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#049cdb', endColorstr='#0064cd', GradientType=0);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+
+
 }
 .ui-daterangepicker ul {
 	width: 17.6em;
@@ -48,6 +106,8 @@
 }
 .ui-daterangepicker li.ui-state-hover, .ui-daterangepicker li.ui-state-active {
 	padding: 0;
+  background:#F9F9F9;
+  border:1px solid #DDD;
 }
 .ui-daterangepicker li.preset_0 {
 	margin-top: 1.5em !important;
@@ -59,6 +119,7 @@
 	font-weight: normal;
 	margin: .3em .5em;
 	display: block;
+  color:#0069D6;
 }
 .ui-daterangepicker li span {
 	float: right;
@@ -67,11 +128,15 @@
 .ui-daterangepicker .title-start, .ui-daterangepicker .title-end {
 	display: block;
 	margin: 0 0 .2em;
-	font-size: 1em;
+	font-size: 14px;
+  font-weight:bold;
+  color:#404040;
 	padding: 0 4px 2px;
+
+
 }
 .ui-daterangepicker .ui-datepicker-inline {
-	font-size: 1em;
+	font-size: 13px;
 }
 .ui-daterangepicker-arrows {
 	padding: 2px;
@@ -101,3 +166,145 @@
 .ui-daterangepicker-arrows .ui-daterangepicker-next:focus {
 	padding: 0;
 }
+
+
+
+
+/*bootstrap hacks*/
+
+.datepicker {
+  background-color: #ffffff;
+  border-color: #999;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  display: none;
+  position: absolute;
+  z-index: 900;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 18px;
+  padding-bottom: 4px;
+  width: 218px;
+}
+.datepicker .nav {
+  font-weight: bold;
+  width: 100%;
+  padding: 4px 0;
+  background-color: #f5f5f5;
+  color: #808080;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+  -moz-box-shadow: inset 0 1px 0 #ffffff;
+  box-shadow: inset 0 1px 0 #ffffff;
+  zoom: 1;
+}
+.datepicker .nav:before, .datepicker .nav:after {
+  display: table;
+  content: "";
+  zoom: 1;
+  *display: inline;
+}
+.datepicker .nav:after {
+  clear: both;
+}
+.datepicker .nav span {
+  display: block;
+  float: left;
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+  position: relative;
+}
+.datepicker .nav .bg {
+  width: 100%;
+  background-color: #fdf5d9;
+  height: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.datepicker .nav .fg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.datepicker .button {
+  cursor: pointer;
+  padding: 0 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.datepicker .button:hover {
+  background-color: #808080;
+  color: #ffffff;
+}
+.datepicker .months {
+  float: left;
+  margin-left: 4px;
+}
+.datepicker .months .name {
+  width: 72px;
+  padding: 0;
+}
+.datepicker .years {
+  float: right;
+  margin-right: 4px;
+}
+.datepicker .years .name {
+  width: 36px;
+  padding: 0;
+}
+.datepicker .dow, .datepicker .days div {
+  float: left;
+  width: 30px;
+  line-height: 25px;
+  text-align: center;
+}
+.datepicker .dow {
+  font-weight: bold;
+  color: #808080;
+}
+.datepicker .calendar {
+  padding: 4px;
+}
+.datepicker .days div {
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.datepicker .days div:hover {
+  background-color: #0064cd;
+  color: #ffffff;
+}
+.datepicker .overlap {
+  color: #bfbfbf;
+}
+.datepicker .today {
+  background-color: #fee9cc;
+}
+.datepicker .selected {
+  background-color: #bfbfbf;
+  color: #ffffff;
+}
+
+
+
+
+
+
