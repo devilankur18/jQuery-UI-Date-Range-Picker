@@ -157,6 +157,12 @@
 .ui-daterangepicker-arrows .ui-daterangepicker-prev {
 	left: 2px;
 }
+
+
+.ui-daterangepicker-arrows .ui-daterangepicker-prev{
+  
+}
+
 .ui-daterangepicker-arrows .ui-daterangepicker-next {
 	right: 2px;
 }
