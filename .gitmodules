@@ -1,0 +1,6 @@
+[submodule "Aristo-jQuery-UI-Theme"]
+path = Aristo-jQuery-UI-Theme
+url = https://github.com/taitems/Aristo-jQuery-UI-Theme.git
+[submodule "bootstrap"]
+path = bootstrap
+url = https://github.com/twitter/bootstrap.git
